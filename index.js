@@ -39,6 +39,9 @@ $(
         }else {
             $('.box-top').css({display: 'block'});
         }
-    })
+    }),
 
+    $('.icon-bar').click(() => {
+        $('.box-nav ul').toggle();
+    })
 )

@@ -29,6 +29,10 @@ body {
     background: red;
     opacity: .8;
 }
+.icon-bar {
+    display: none;
+    position: relative;
+}
 @keyframes starttitle {
     0% {
         opacity: 0;
@@ -482,6 +486,8 @@ body {
     text-indent: 30px;
     letter-spacing: 1px; 
     resize: none;
+    width: 440px;
+    height: 120px;
 }
 .section.section-contact .container.container-contact .contact-form .form-contact .first-and-last-name input:focus + label,
 .section.section-contact .container.container-contact .contact-form .form-contact .my-gmail input:focus + label,
@@ -702,17 +708,296 @@ body {
 /* --------------  DECIVE IPAD --------------- */
 @media only screen 
   and (min-width: 768px) 
-  and (max-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
+  and (max-width: 1024px)  {
     body {
-        background: red;
+        overflow: auto;
+    }
+    .container-header .box-nav .nav-icon {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+    }
+    .container-header .box-nav .nav-icon .icon-bar {
+        display: block;
+        font-size: 22px;
+        cursor: pointer;
+        padding-left: 20px;
+    }
+    .container-header .box-nav ul {
+       padding: 5px 0 5px 12px;
+    }
+    .container-header .box-nav ul li:nth-child(1) {
+        display: none;
+    }
+    .container-header .box-content {
+        display: none;
+    }
+    .section.section-intro .intro.intro-header .header-title h2 {
+        margin-left: 4rem;
+    }
+    .section.section-intro .intro.intro-body p {
+        opacity: 1;
+        left: 0;
+    }
+    .section.section-companion .container-companion .companion-body .body-text p {
+        opacity: 1;
+    }
+    .section.section-companion .container-companion .companion-body .body-img .img {
+        width: 85%;
+        height: 75%;
+        opacity: 1;
+    }
+    .section.section-playHard .container-playHard .playHard-body .body-boxImg .item-box {
+        opacity: 1;
+    }
+    .section.section-playHard .container-playHard .playHard-body .body-boxImg .item-box.item-1 {
+        width: calc(35% - 40px);
+        background-position: center;
+    }
+    .section.section-playHard .container-playHard .playHard-body .body-boxImg .item-box.item-2 {
+        background-size: cover;
+    }
+    .section.section-playHard .container-playHard .playHard-body .body-boxImg .item-box.item-3 {
+        background-size: cover;
+        width: calc(44% - 38px);
+    }
+    .section.section-playHard .container-playHard .playHard-body .body-boxImg .item-box.item-5 {
+        background-position-x: -100px;
+        width: calc(28% - 40px);
+    }
+    .section.section-playHard .container-playHard .playHard-body .body-boxImg .item-box.item-6 {
+        width: calc(30% - 40px);
+    }
+    .section.section-playHard .container-playHard .playHard-body .body-boxImg .item-box.item-7 {
+        width: calc(19% - 40px);
+        height: 228px;
+    }
+    .section.section-playHard .container-playHard .playHard-body .body-boxImg .item-box.item-8 {
+        height: 228px;
+        background-position-x: -90px;
+        width: calc(15% - 42px);
+    }
+    .section.section-contact .container.container-contact .contact-form .form-contact .note textarea {
+        width: 280px;
+    }
+    .section.section-follow .container-follow .follow-social-network ul li {
+        margin: 0 25px;
+    }
+    .section.section-follow .container-follow .follow-social-network ul li a {
+        width: 80px;
+        height: 80px;
     }
 }
 /* --------------  END IPAD --------------- */
 
-/* --------------  DEVICE IPAD --------------- */
+@media only screen 
+  and (min-width: 542px) 
+  and (max-width: 768px)  {
+    body {
+        overflow: auto;
+    }
+    .container-header .box-nav .nav-icon .icon-bar {
+        display: block;
+        font-size: 22px;
+        cursor: pointer;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    .container-header .box-nav ul li:nth-child(1) {
+        display: none;
+    }
+    .container-header .box-nav ul li:nth-child(1) {
+        display: none;
+    }
+    .container-header .box-content {
+        display: none;
+    }
+    .section.section-intro .intro.intro-header .header-title h2 {
+        margin-left: 4rem;
+    }
+    .section.section-intro .intro.intro-body p {
+        opacity: 1;
+        left: 0;
+    }
+    .section.section-playHard .container-playHard .playHard-body .body-boxImg .item-box {
+        opacity: 1;
+    }
+    .section.section-companion .container-companion .companion-body .body-text p {
+        opacity: 1;
+    }
+    .section.section-companion .container-companion .companion-body .body-img .img {
+        width: 85%;
+        height: 25%;
+        opacity: 0;
+        position: relative;
+        top: 100px;
+    }
+    .section.section-playHard .container-playHard .playHard-body .body-boxImg .item-box.item-1 {
+        width: calc(35% - 40px);
+        background-position: center;
+        height: 150px;
+    }
+    .section.section-playHard .container-playHard .playHard-body .body-boxImg .item-box.item-2 {
+        background-size: cover;
+    }
+    .section.section-playHard .container-playHard .playHard-body .body-boxImg .item-box.item-3 {
+        background-size: cover;
+        width: calc(44% - 38px);
+    }
+    .section.section-playHard .container-playHard .playHard-body .body-boxImg .item-box.item-4 {
+        width: calc(44% - 38px);
+        height: 300px;
+    }
+    .section.section-playHard .container-playHard .playHard-body .body-boxImg .item-box.item-5 {
+        background-position-x: -100px;
+        width: calc(28% - 40px);
+        height: 300px;
+    }
+    .section.section-playHard .container-playHard .playHard-body .body-boxImg .item-box.item-6 {
+        width: calc(30% - 40px);
+        display: none;
+    }
+    .section.section-playHard .container-playHard .playHard-body .body-boxImg .item-box.item-7 {
+        width: calc(19% - 40px);
+        height: 228px;
+        display: none;
+    }
+    .section.section-playHard .container-playHard .playHard-body .body-boxImg .item-box.item-8 {
+        height: 300px;
+        background-position:right;
+        width: calc(37% - 40px);
+    }
+    .section.section-follow .container-follow .follow-social-network ul li {
+        margin: 0 25px;
+    }
+    .section.section-follow .container-follow .follow-social-network ul li a {
+        width: 60px;
+        height: 60px;
+    }
+    .section.section-follow .container-follow .follow-social-network ul li a span::after {
+        font-size: 1.5rem;
+        line-height: 60px;
+    }
+    .section.section-follow .container-follow .follow-social-network ul li a span::before {
+        font-size: 1.5rem;
+        line-height: 60px;
+    }
+    .section.section-contact .container.container-contact .contact-img .img {
+        display: none;
+    }
+    .section.section-contact .container.container-contact .contact-form {
+        grid-column: 2 / span 12;
+    }
+}
 
-/* --------------  END DEVICE IPAD --------------- */
+/* --------------  DEVICE phone --------------- */
+@media only screen 
+  and (min-width: 360px) 
+  and (max-width: 542px)  {
+    body {
+        overflow: auto;
+    }
+    .container-header .box-nav ul li:nth-child(1) {
+        display: none;
+    }
+    .container-header .box-content {
+        display: none;
+    }
+    .section.section-intro .intro.intro-header .header-title h2 {
+        margin-left: 4rem;
+    }
+    .section.section-intro .intro.intro-body p {
+        opacity: 1;
+        left: 0;
+    }
+    .section.section-playHard .container-playHard .playHard-body .body-boxImg .item-box {
+        opacity: 1;
+    }
+    .section.section-companion .container-companion .companion-body .body-text p {
+        opacity: 1;
+    }
+    .section.section-companion .container-companion .companion-body .body-img .img {
+        width: 85%;
+        height: 25%;
+        opacity: 0;
+        position: relative;
+        top: 100px;
+    }
+    .section.section-playHard .container-playHard .playHard-body .body-boxImg .item-box.item-1 {
+        width: calc(35% - 40px);
+        background-position: center;
+        height: 150px;
+    }
+    .section.section-playHard .container-playHard .playHard-body .body-boxImg .item-box.item-2 {
+        background-size: cover;
+    }
+    .section.section-playHard .container-playHard .playHard-body .body-boxImg .item-box.item-3 {
+        background-size: cover;
+        width: calc(44% - 38px);
+    }
+    .section.section-playHard .container-playHard .playHard-body .body-boxImg .item-box.item-4 {
+        width: calc(44% - 38px);
+        height: 300px;
+    }
+    .section.section-contact .container.container-contact .contact-img .img {
+        display: none;
+    }
+    .section.section-contact .container.container-contact .contact-form {
+        grid-column: 2 / span 12;
+    }
+    .section.section-playHard .container-playHard .playHard-body .body-boxImg .item-box.item-5 {
+        background-position-x: -100px;
+        width: calc(28% - 40px);
+        height: 300px;
+    }
+    .section.section-playHard .container-playHard .playHard-body .body-boxImg .item-box.item-6 {
+        width: calc(30% - 40px);
+        display: none;
+    }
+    .section.section-playHard .container-playHard .playHard-body .body-boxImg .item-box.item-7 {
+        width: calc(19% - 40px);
+        height: 228px;
+        display: none;
+    }
+    .section.section-playHard .container-playHard .playHard-body .body-boxImg .item-box.item-8 {
+        height: 300px;
+        background-position:right;
+        width: calc(37% - 40px);
+    }
+    .section.section-follow .container-follow .follow-social-network ul li {
+        margin: 0 10px;
+    }
+    .section.section-follow .container-follow .follow-social-network ul li a {
+        width: 60px;
+        height: 60px;
+    }
+    .section.section-follow .container-follow .follow-social-network ul li a span::after {
+        font-size: 1.5rem;
+        line-height: 60px;
+    }
+    .section.section-follow .container-follow .follow-social-network ul li a span::before {
+        font-size: 1.5rem;
+        line-height: 60px;
+    }
+    .footer .container-footer .footer-info.footer-info-contact {
+        grid-column: 1 / span 12;
+        padding: 30px 0;
+    }
+    .footer .container-footer .footer-info.footer-info-contact ul {
+        margin-left: 1rem;
+    }
+    .footer .container-footer .footer-info.footer-info-author {
+        grid-column: 1 / span 12;
+    }
+    .footer .container-footer .footer-info.footer-info-author ul {
+        margin-left: 1rem;
+    }
+}
+
+/* --------------  END DEVICE phone --------------- */
 
 
 
